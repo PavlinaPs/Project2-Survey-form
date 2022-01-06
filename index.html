@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Static/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Cabin">
+    <title>Survey</title>
+</head>
+<body class="body">
+    <div class="grid-container1">
+        <div class="grid-items1 item1"></div>
+        <div class="grid-items1 item2"></div>
+        <div class="grid-items1 item3"></div>
+        <div class="grid-items1 item4"></div>
+        <div class="grid-items1 item5"></div>
+        <div class="grid-items1 item6"></div>
+        <div class="grid-items1 item7"></div>
+        <div class="grid-items1 item8"></div>
+    </div>    
+    
+    <h1 id="title">Crochet Toys Survey</h1>
+    <p id="description">Let's make our babies even happier.</p>
+    <img id="crochetYarnIcon" src="/Project2-Survey-form/Static/Pics/crochetYarnIcon100px.png">
+    <div id="flex-container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name </label>
+                <input type="text" id="name" name="name" size="20" placeholder="Enter your name" required autofocus><br>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="age">How old is your baby? </label>
+                <input type="number" id="number" name="age" size="40" placeholder="Enter age in months" required min="0" max="96"><br>
+            </div>
+            <div class="form-group">
+                <label for="dropdown">What kind of crochet toy likes your baby the most?</label>
+                    <select id="dropdown" name="dropdown">
+                        <option disabled="" selected="">Select a toy</option>
+                        <option value="octopus">Octopus</option>
+                        <option value="teether">Teether</option>
+                        <option value="security-blanket">Security blanket</option>
+                        <option value="animal">Bear or other animal</option>
+                        <option value="doll">Doll</option>
+                        <option value="pajama-eater">Pajama eater</option>
+                    </select><br>
+            </div>
+            <fieldset id="fieldset-grid">
+                <legend>&nbsp;Washing&nbsp;</legend>
+                <div class="form-group">
+                    <p>How do you wash crochet toys?</p>
+                    <label for="hand-wash">
+                        <input type="radio" id="hand-wash" name="toy-washing" value="hand-wash">&nbsp; &nbsp;Hand wash
+                    </label><br>
+                    <label for="machine-wash-delicate">
+                        <input type="radio" id="machine-wash-delicate" name="toy-washing" value="machine-wash-delicate">&nbsp; &nbsp;Machine wash, delicate cycle
+                    </label><br>
+                    <label for="machine-wash-normal">
+                        <input type="radio" id="machine-wash-normal" name="toy-washing" value="machine-wash-normal">&nbsp; &nbsp;Machine wash, normal cycle
+                    </label><br>
+                </div>
+                <div class="form-group">
+                    <p>How often do you wash crochet toys?</p>
+                    <label for="once-a-month">
+                        <input type="radio" id="once-a-month" name="how-often-washed" value="once-a-month">&nbsp; &nbsp;Once a month
+                    </label><br>
+                    <label for="once-a-week">
+                        <input type="radio" id="once-a-week" name="how-often-washed" value="once-a-week">&nbsp; &nbsp;Once a week
+                    </label><br>
+                    <label for="more-often">
+                        <input type="radio" id="more-often" name="how-often-washed" value="more-often">&nbsp; &nbsp;More often
+                    </label><br>
+                </div>
+            </fieldset><br>
+            <div class="form-group">
+                <p>Do the toys keep their shape and color?</p>
+                <fieldset id="fieldset-checkbox">
+                    <label for="keep-shape">
+                        <input type="checkbox" id="keep-shape" name="shape-and-color" value="keep-shape">&nbsp; &nbsp;Toys keep their shape
+                    </label><br>
+                    <label for="shrink">
+                        <input type="checkbox" id="shrink" name="shape-and-color" value="shrink">&nbsp; &nbsp;Toys shrink
+                    </label><br>
+                    <label for="keep-color">
+                        <input type="checkbox" id="keep-color" name="shape-and-color" value="keep-color">&nbsp; &nbsp;Toys keep their color
+                    </label><br>
+                    <label for="color-faded">
+                        <input type="checkbox" id="color-faded" name="shape-and-color" value="color-faded">&nbsp; &nbsp;Toys look faded
+                    </label><br>
+                </fieldset>
+            </div><br>
+            <div class="form-group">
+                <label for="comments">What other kinds of crochet toys would you like?</label><br>
+                <!-- the opening and closing tags for the <textarea> element must be on the same line, otherwise a newline character occupies it. The placeholder will therefore not be displayed since the input area contains content (a newline character is, technically, valid content). -->
+                <textarea rows="5" cols="30" id="comments" name="comments" placeholder="Please leave a comment"></textarea>
+            </div><br>
+            <div class="submit-button">
+                <input type="submit" id="submit" value="Submit survey form">
+            </div>
+        </form>
+    </div>
+    <div class="grid-container2">
+        <div class="grid-items2 item10"></div>
+        <div class="grid-items2 item11"></div>
+        <div class="grid-items2 item12"></div>
+        <div class="grid-items2 item13"></div>
+        <div class="grid-items2 item14"></div>
+    </div>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>
