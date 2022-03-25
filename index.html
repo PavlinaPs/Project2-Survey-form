@@ -2,32 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Static/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette|Cabin">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Courgette&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.gif">
     <title>Survey</title>
 </head>
+
 <body class="body">
-    <div class="grid-container1">
-        <div class="grid-items1 item1"></div>
-        <div class="grid-items1 item2"></div>
-        <div class="grid-items1 item3"></div>
-        <div class="grid-items1 item4"></div>
-        <div class="grid-items1 item5"></div>
-        <div class="grid-items1 item6"></div>
-        <div class="grid-items1 item7"></div>
-        <div class="grid-items1 item8"></div>
+    <div class="flex-container1">
+        <div class="flex-items1 item1"></div>
+        <div class="flex-items1 item2"></div>
+        <div class="flex-items1 item3"></div>
+        <div class="flex-items1 item4"></div>
+        <div class="flex-items1 item5"></div>
+        <div class="flex-items1 item6"></div>
+        <div class="flex-items1 item7"></div>
+        <div class="flex-items1 item8"></div>
     </div>    
     
     <h1 id="title">Crochet Toys Survey</h1>
     <p id="description">Let's make our babies even happier.</p>
-    <img id="crochetYarnIcon" src="/Project2-Survey-form/Static/Pics/crochetYarnIcon100px.png">
+    <img id="crochetYarnIcon" src="./images/crochetYarnIcon100px.png" alt="crochet yarn icon">
     <div id="flex-container">
         <form id="survey-form">
+
             <div class="form-group">
                 <label id="name-label" for="name">Name </label>
-                <input type="text" id="name" name="name" size="20" placeholder="Enter your name" required autofocus><br>
+                <input type="text" id="name" name="name" size="20" placeholder="Enter your name" required><br>
             </div>
             <div class="form-group">
                 <label id="email-label" for="email">Email </label>
@@ -37,6 +44,7 @@
                 <label id="number-label" for="age">How old is your baby? </label>
                 <input type="number" id="number" name="age" size="40" placeholder="Enter age in months" required min="0" max="96"><br>
             </div>
+
             <div class="form-group">
                 <label for="dropdown">What kind of crochet toy likes your baby the most?</label>
                     <select id="dropdown" name="dropdown">
@@ -49,6 +57,7 @@
                         <option value="pajama-eater">Pajama eater</option>
                     </select><br>
             </div>
+
             <fieldset id="fieldset-grid">
                 <legend>&nbsp;Washing&nbsp;</legend>
                 <div class="form-group">
@@ -76,6 +85,7 @@
                     </label><br>
                 </div>
             </fieldset><br>
+
             <div class="form-group">
                 <p>Do the toys keep their shape and color?</p>
                 <fieldset id="fieldset-checkbox">
@@ -98,17 +108,20 @@
                 <!-- the opening and closing tags for the <textarea> element must be on the same line, otherwise a newline character occupies it. The placeholder will therefore not be displayed since the input area contains content (a newline character is, technically, valid content). -->
                 <textarea rows="5" cols="30" id="comments" name="comments" placeholder="Please leave a comment"></textarea>
             </div><br>
+
             <div class="submit-button">
                 <input type="submit" id="submit" value="Submit survey form">
             </div>
         </form>
+
     </div>
-    <div class="grid-container2">
-        <div class="grid-items2 item10"></div>
-        <div class="grid-items2 item11"></div>
-        <div class="grid-items2 item12"></div>
-        <div class="grid-items2 item13"></div>
-        <div class="grid-items2 item14"></div>
+
+    <div class="flex-container2">
+        <div class="flex-items2 item10"></div>
+        <div class="flex-items2 item11"></div>
+        <div class="flex-items2 item12"></div>
+        <div class="flex-items2 item13"></div>
+        <div class="flex-items2 item14"></div>
     </div>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 </body>
